@@ -16,16 +16,6 @@ Code of the IJCAI 2024 paper "MultifacetEval: Multifaceted Evaluation to Probe L
 >torch==2.0.1\
 >tqdm==4.65.0\
 >transformers==4.36.2
-# Create the Dataset from Scripts
-You need to first download the MedQA dataset, and then run
-```
-python recognize_and_rewrite_medqa.py
-```
-to parse the questions. After that, run
-```
-python gen_medqa_questions.py
-```
-to generate the questions. Make sure that you have download the MedCAT tool kit and replace the placeholder in the script with the correct path. The documents of MedCAT can be found [here](https://medcat.readthedocs.io/en/latest/).
 # Experiments
 Please follow the instruction below to reimplement our experiments. Results can be found in the *results/medqa* directory.
 ## GPT-3.5-turbo
@@ -71,6 +61,16 @@ For CoT+SC, run the following command instead
 ```
 bash eval_cot.sh
 ```
+# Create the Dataset from Scripts
+You may also generate the MultiMedQA dataset from the original MedQA dataset. To do so, you need to first download the MedQA dataset and place it in this repo, and then run
+```
+python recognize_and_rewrite_medqa.py
+```
+to parse the questions. After that, run
+```
+python gen_medqa_questions.py
+```
+to generate the questions. Make sure that you have download the MedCAT tool kit and replace the placeholder in the script with the correct path. The documents of MedCAT can be found [here](https://medcat.readthedocs.io/en/latest/).
 
 
 
