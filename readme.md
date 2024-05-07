@@ -70,7 +70,7 @@ to parse the questions. After that, run
 ```
 python gen_medqa_questions.py
 ```
-to generate the questions. Make sure that you have download the MedCAT tool kit and replace the placeholder in the script with the correct path. The documents of MedCAT can be found [here](https://medcat.readthedocs.io/en/latest/).
+to generate the questions. Make sure that you have downloaded the MedCAT tool kit and replace the placeholder in the script with the correct path. The documents of MedCAT can be found [here](https://medcat.readthedocs.io/en/latest/). Also, you need to prepare a JSON file named "concept_attributes.json" that contains a dictionary mapping each UMLS CUI to a list of medical synonyms. Due to copyright issues, we do not provide this file; please prepare it yourself after obtaining UMLS access rights.
 
 
 
